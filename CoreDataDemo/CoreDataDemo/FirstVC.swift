@@ -15,16 +15,16 @@ class FirstVC: UIViewController {
     
     
     @IBAction func saveAction(_ sender: UIButton) {
-        //第一步:获取总代理和托管对象总管
+        //第一步:获取总代理和托管对象托管对象上下文
         let app = UIApplication.shared.delegate as? AppDelegate
         let context = app?.persistentContainer.viewContext
-        //第二步:创建一个 entity
+        //第二步:创建实体,获取托管对象
         let entity = NSEntityDescription.entity(forEntityName: "Student", in: context!)
         let student = NSManagedObject(entity: entity!, insertInto: context) as! Student
-        //第三步:保存数据到 student
+        //第三步:将数据赋值给托管对象
         student.name = self.nameTF.text
         student.age = Int32(self.ageTF.text!)!
-        //第四步:保存 entity 到托管对象中。如果保存失败，进行处理
+        //第四步:保存到数据库。如果保存失败，进行处理
         do {
             try context?.save()
         } catch  {
@@ -32,7 +32,7 @@ class FirstVC: UIViewController {
         }
     }
     @IBAction func showAction(_ sender: UIButton) {
-        //第一步:获取总代理和托管对象总管
+        //第一步:获取总代理和托管对象托管对象上下文
         let app = UIApplication.shared.delegate as? AppDelegate
         let context = app?.persistentContainer.viewContext
         //第二步:建立一个获取的请求
@@ -40,7 +40,6 @@ class FirstVC: UIViewController {
         
         //第三步:执行请求
         do {
-            
             //[Student] 这个位置填的是获取对象的类型
             //也可以使用 基类 NSManagedObject
             let fetch = try context?.fetch(fetchRequest) as? [Student]
@@ -59,7 +58,7 @@ class FirstVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor.white
+        //        self.view.backgroundColor = UIColor.white
     }
     
     

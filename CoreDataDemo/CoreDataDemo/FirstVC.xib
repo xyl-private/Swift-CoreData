@@ -62,17 +62,26 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoP-KY-P0w">
-                    <rect key="frame" x="38" y="185" width="265" height="187"/>
+                    <rect key="frame" x="38" y="249" width="265" height="187"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查询结果:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gR5-OU-Lft">
+                    <rect key="frame" x="38" y="220" width="74" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="gR5-OU-Lft" firstAttribute="leading" secondItem="hFC-jL-Mo3" secondAttribute="leading" id="1K0-Hm-4hq"/>
                 <constraint firstItem="V7X-PQ-0Mx" firstAttribute="top" secondItem="Bce-Np-GeI" secondAttribute="bottom" constant="12" id="4hv-D4-Ppa"/>
+                <constraint firstItem="gR5-OU-Lft" firstAttribute="top" secondItem="vXr-de-eFo" secondAttribute="bottom" constant="43" id="81G-ul-NGU"/>
+                <constraint firstItem="qoP-KY-P0w" firstAttribute="top" secondItem="gR5-OU-Lft" secondAttribute="bottom" constant="8" symbolic="YES" id="FQv-dr-MIF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bce-Np-GeI" secondAttribute="trailing" constant="72" id="FuB-0y-4cH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qoP-KY-P0w" secondAttribute="bottom" constant="295" id="JUD-Yy-jzq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qoP-KY-P0w" secondAttribute="bottom" constant="231" id="Ham-md-Vqf"/>
                 <constraint firstItem="Adp-0Z-no3" firstAttribute="top" secondItem="V7X-PQ-0Mx" secondAttribute="bottom" constant="30" id="Lex-jp-ns2"/>
                 <constraint firstItem="vXr-de-eFo" firstAttribute="baseline" secondItem="Adp-0Z-no3" secondAttribute="baseline" id="NFm-WI-vc9"/>
                 <constraint firstItem="Bce-Np-GeI" firstAttribute="leading" secondItem="A8n-qF-WuF" secondAttribute="trailing" constant="8" symbolic="YES" id="Nnm-2F-Tgd"/>
@@ -86,7 +95,6 @@
                 <constraint firstItem="Bce-Np-GeI" firstAttribute="trailing" secondItem="V7X-PQ-0Mx" secondAttribute="trailing" id="t0F-mI-dgb"/>
                 <constraint firstItem="hFC-jL-Mo3" firstAttribute="leading" secondItem="qoP-KY-P0w" secondAttribute="leading" id="vFc-5g-3sY"/>
                 <constraint firstItem="Bce-Np-GeI" firstAttribute="leading" secondItem="V7X-PQ-0Mx" secondAttribute="leading" id="vvR-s9-Gts"/>
-                <constraint firstItem="qoP-KY-P0w" firstAttribute="top" secondItem="vXr-de-eFo" secondAttribute="bottom" constant="8" symbolic="YES" id="xtp-ut-Tel"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Adp-0Z-no3" secondAttribute="trailing" constant="142" id="yaC-Ww-1uc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
