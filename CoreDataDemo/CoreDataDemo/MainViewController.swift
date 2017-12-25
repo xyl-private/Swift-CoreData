@@ -17,10 +17,10 @@ class MainViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         table.dataSource = self
         //注册 cell
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
+        hildTableViewExtraCellLineHidden(tableView: table)
         return table
         }()
-    var titles:[String] = ["Swift-Core Data(1) 基础","Swift-Core Data(2) 基础","Swift-Core Data(3) 基础"]
+    var titles:[String] = ["(1) 初级","(2) 初级 (查、改、删)","(3) 初级 (计算平均数、总和、最大/小值等)","(4) 进阶 多表关联操作"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,16 +42,19 @@ class MainViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     }
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            self.navigationController?.pushViewController(FirstVC(), animated: true)
-        case 1:
-            self.navigationController?.pushViewController(FirstVC(), animated: true)
-        default:
-            print("default")
-        }
+        
+        let vcs = [FirstVC(),SecondVC(),ThreeVC(),FourViewController()]
+        let vc = vcs[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    
     }
-
+    //MARK:隐藏多余的cell分割线
+    func hildTableViewExtraCellLineHidden(tableView : UITableView){
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        tableView.tableFooterView = view
+        tableView.tableHeaderView = view
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

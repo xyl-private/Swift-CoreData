@@ -15,6 +15,11 @@ class FirstVC: UIViewController {
     
     
     @IBAction func saveAction(_ sender: UIButton) {
+        let student = StudentModel(name: self.nameTF.text!, age: Int32(self.ageTF.text!)!)
+        saveData(student: student)
+    }
+    
+    func saveData(student stu:StudentModel){
         //第一步:获取总代理和托管对象托管对象上下文
         let app = UIApplication.shared.delegate as? AppDelegate
         let context = app?.persistentContainer.viewContext
@@ -22,8 +27,8 @@ class FirstVC: UIViewController {
         let entity = NSEntityDescription.entity(forEntityName: "Student", in: context!)
         let student = NSManagedObject(entity: entity!, insertInto: context) as! Student
         //第三步:将数据赋值给托管对象
-        student.name = self.nameTF.text
-        student.age = Int32(self.ageTF.text!)!
+        student.name = stu.name
+        student.age = stu.age
         //第四步:保存到数据库。如果保存失败，进行处理
         do {
             try context?.save()
@@ -31,6 +36,7 @@ class FirstVC: UIViewController {
             fatalError("无法保存")
         }
     }
+    
     @IBAction func showAction(_ sender: UIButton) {
         //第一步:获取总代理和托管对象托管对象上下文
         let app = UIApplication.shared.delegate as? AppDelegate

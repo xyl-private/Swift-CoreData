@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23C6FB61FF08DE100A214A9 /* CustomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C6FB51FF08DE100A214A9 /* CustomItem.swift */; };
 		B25B33541FE7AC9500E42D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B33531FE7AC9500E42D52 /* AppDelegate.swift */; };
 		B25B33591FE7AC9500E42D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25B33571FE7AC9500E42D52 /* Main.storyboard */; };
 		B25B335C1FE7AC9500E42D52 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B25B335A1FE7AC9500E42D52 /* CoreDataDemo.xcdatamodeld */; };
 		B25B335E1FE7AC9500E42D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25B335D1FE7AC9500E42D52 /* Assets.xcassets */; };
 		B25B33611FE7AC9500E42D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25B335F1FE7AC9500E42D52 /* LaunchScreen.storyboard */; };
-		B25B337A1FE7B40000E42D52 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B33781FE7B40000E42D52 /* Student+CoreDataClass.swift */; };
-		B25B337B1FE7B40000E42D52 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B33791FE7B40000E42D52 /* Student+CoreDataProperties.swift */; };
 		B25B337D1FE7BCC500E42D52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B337C1FE7BCC500E42D52 /* MainViewController.swift */; };
 		B2762C841FE88F4000067FBE /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2762C821FE88F4000067FBE /* FirstVC.swift */; };
 		B2762C851FE88F4000067FBE /* FirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2762C831FE88F4000067FBE /* FirstVC.xib */; };
+		B278BCB31FEB89F700A47739 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278BCB11FEB89F700A47739 /* SecondVC.swift */; };
+		B278BCB41FEB89F700A47739 /* SecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B278BCB21FEB89F700A47739 /* SecondVC.xib */; };
+		B278BCB71FEB9EB500A47739 /* SecondChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278BCB51FEB9EB500A47739 /* SecondChangeVC.swift */; };
+		B278BCB81FEB9EB500A47739 /* SecondChangeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B278BCB61FEB9EB500A47739 /* SecondChangeVC.xib */; };
+		B278BCBE1FEBB29700A47739 /* SecondTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278BCBC1FEBB29700A47739 /* SecondTVCell.swift */; };
+		B278BCBF1FEBB29700A47739 /* SecondTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B278BCBD1FEBB29700A47739 /* SecondTVCell.xib */; };
+		B278BCC11FEBB5FB00A47739 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278BCC01FEBB5FB00A47739 /* Model.swift */; };
+		B278BCC51FEC913D00A47739 /* ThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278BCC31FEC913D00A47739 /* ThreeVC.swift */; };
+		B278BCC61FEC913D00A47739 /* ThreeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B278BCC41FEC913D00A47739 /* ThreeVC.xib */; };
+		B278BCCA1FECB56A00A47739 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278BCC81FECB56A00A47739 /* FourViewController.swift */; };
+		B278BCCB1FECB56A00A47739 /* FourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B278BCC91FECB56A00A47739 /* FourViewController.xib */; };
+		B278BCCE1FECE2A600A47739 /* WriteInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278BCCC1FECE2A600A47739 /* WriteInfoVC.swift */; };
+		B278BCCF1FECE2A600A47739 /* WriteInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B278BCCD1FECE2A600A47739 /* WriteInfoVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B23C6FB51FF08DE100A214A9 /* CustomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItem.swift; sourceTree = "<group>"; };
 		B25B33501FE7AC9500E42D52 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25B33531FE7AC9500E42D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B25B33581FE7AC9500E42D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,11 +40,22 @@
 		B25B335D1FE7AC9500E42D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B25B33601FE7AC9500E42D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B25B33621FE7AC9500E42D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B25B33781FE7B40000E42D52 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B25B33791FE7B40000E42D52 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B25B337C1FE7BCC500E42D52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2762C821FE88F4000067FBE /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		B2762C831FE88F4000067FBE /* FirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstVC.xib; sourceTree = "<group>"; };
+		B278BCB11FEB89F700A47739 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		B278BCB21FEB89F700A47739 /* SecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVC.xib; sourceTree = "<group>"; };
+		B278BCB51FEB9EB500A47739 /* SecondChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChangeVC.swift; sourceTree = "<group>"; };
+		B278BCB61FEB9EB500A47739 /* SecondChangeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondChangeVC.xib; sourceTree = "<group>"; };
+		B278BCBC1FEBB29700A47739 /* SecondTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTVCell.swift; sourceTree = "<group>"; };
+		B278BCBD1FEBB29700A47739 /* SecondTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTVCell.xib; sourceTree = "<group>"; };
+		B278BCC01FEBB5FB00A47739 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B278BCC31FEC913D00A47739 /* ThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeVC.swift; sourceTree = "<group>"; };
+		B278BCC41FEC913D00A47739 /* ThreeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeVC.xib; sourceTree = "<group>"; };
+		B278BCC81FECB56A00A47739 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		B278BCC91FECB56A00A47739 /* FourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourViewController.xib; sourceTree = "<group>"; };
+		B278BCCC1FECE2A600A47739 /* WriteInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteInfoVC.swift; sourceTree = "<group>"; };
+		B278BCCD1FECE2A600A47739 /* WriteInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteInfoVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +88,14 @@
 		B25B33521FE7AC9500E42D52 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B25B33771FE7B40000E42D52 /* CoreDataClass */,
 				B25B33531FE7AC9500E42D52 /* AppDelegate.swift */,
 				B25B337C1FE7BCC500E42D52 /* MainViewController.swift */,
-				B2762C821FE88F4000067FBE /* FirstVC.swift */,
-				B2762C831FE88F4000067FBE /* FirstVC.xib */,
+				B278BCC01FEBB5FB00A47739 /* Model.swift */,
+				B23C6FB51FF08DE100A214A9 /* CustomItem.swift */,
+				B278BCC71FECB55500A47739 /* Four */,
+				B278BCC21FEC911900A47739 /* Three */,
+				B278BCBB1FEBB26100A47739 /* FirstVC */,
+				B278BCBA1FEBB24F00A47739 /* SecondVC */,
 				B25B33571FE7AC9500E42D52 /* Main.storyboard */,
 				B25B335D1FE7AC9500E42D52 /* Assets.xcassets */,
 				B25B335F1FE7AC9500E42D52 /* LaunchScreen.storyboard */,
@@ -78,13 +105,46 @@
 			path = CoreDataDemo;
 			sourceTree = "<group>";
 		};
-		B25B33771FE7B40000E42D52 /* CoreDataClass */ = {
+		B278BCBA1FEBB24F00A47739 /* SecondVC */ = {
 			isa = PBXGroup;
 			children = (
-				B25B33781FE7B40000E42D52 /* Student+CoreDataClass.swift */,
-				B25B33791FE7B40000E42D52 /* Student+CoreDataProperties.swift */,
+				B278BCB11FEB89F700A47739 /* SecondVC.swift */,
+				B278BCB21FEB89F700A47739 /* SecondVC.xib */,
+				B278BCB51FEB9EB500A47739 /* SecondChangeVC.swift */,
+				B278BCB61FEB9EB500A47739 /* SecondChangeVC.xib */,
+				B278BCBC1FEBB29700A47739 /* SecondTVCell.swift */,
+				B278BCBD1FEBB29700A47739 /* SecondTVCell.xib */,
 			);
-			path = CoreDataClass;
+			path = SecondVC;
+			sourceTree = "<group>";
+		};
+		B278BCBB1FEBB26100A47739 /* FirstVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2762C821FE88F4000067FBE /* FirstVC.swift */,
+				B2762C831FE88F4000067FBE /* FirstVC.xib */,
+			);
+			path = FirstVC;
+			sourceTree = "<group>";
+		};
+		B278BCC21FEC911900A47739 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				B278BCC31FEC913D00A47739 /* ThreeVC.swift */,
+				B278BCC41FEC913D00A47739 /* ThreeVC.xib */,
+			);
+			path = Three;
+			sourceTree = "<group>";
+		};
+		B278BCC71FECB55500A47739 /* Four */ = {
+			isa = PBXGroup;
+			children = (
+				B278BCC81FECB56A00A47739 /* FourViewController.swift */,
+				B278BCC91FECB56A00A47739 /* FourViewController.xib */,
+				B278BCCC1FECE2A600A47739 /* WriteInfoVC.swift */,
+				B278BCCD1FECE2A600A47739 /* WriteInfoVC.xib */,
+			);
+			path = Four;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +179,7 @@
 				TargetAttributes = {
 					B25B334F1FE7AC9500E42D52 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,9 +207,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B278BCBF1FEBB29700A47739 /* SecondTVCell.xib in Resources */,
+				B278BCB41FEB89F700A47739 /* SecondVC.xib in Resources */,
+				B278BCCF1FECE2A600A47739 /* WriteInfoVC.xib in Resources */,
+				B278BCCB1FECB56A00A47739 /* FourViewController.xib in Resources */,
 				B25B33611FE7AC9500E42D52 /* LaunchScreen.storyboard in Resources */,
 				B2762C851FE88F4000067FBE /* FirstVC.xib in Resources */,
 				B25B335E1FE7AC9500E42D52 /* Assets.xcassets in Resources */,
+				B278BCC61FEC913D00A47739 /* ThreeVC.xib in Resources */,
+				B278BCB81FEB9EB500A47739 /* SecondChangeVC.xib in Resources */,
 				B25B33591FE7AC9500E42D52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,11 +228,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2762C841FE88F4000067FBE /* FirstVC.swift in Sources */,
-				B25B337A1FE7B40000E42D52 /* Student+CoreDataClass.swift in Sources */,
+				B278BCCA1FECB56A00A47739 /* FourViewController.swift in Sources */,
+				B278BCCE1FECE2A600A47739 /* WriteInfoVC.swift in Sources */,
+				B278BCB71FEB9EB500A47739 /* SecondChangeVC.swift in Sources */,
+				B278BCBE1FEBB29700A47739 /* SecondTVCell.swift in Sources */,
+				B23C6FB61FF08DE100A214A9 /* CustomItem.swift in Sources */,
+				B278BCB31FEB89F700A47739 /* SecondVC.swift in Sources */,
+				B278BCC11FEBB5FB00A47739 /* Model.swift in Sources */,
+				B278BCC51FEC913D00A47739 /* ThreeVC.swift in Sources */,
 				B25B335C1FE7AC9500E42D52 /* CoreDataDemo.xcdatamodeld in Sources */,
 				B25B337D1FE7BCC500E42D52 /* MainViewController.swift in Sources */,
 				B25B33541FE7AC9500E42D52 /* AppDelegate.swift in Sources */,
-				B25B337B1FE7B40000E42D52 /* Student+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,11 +375,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45VTD9HTW8;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyl.CoreDataDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,10 +392,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45VTD9HTW8;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyl.CoreDataDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
